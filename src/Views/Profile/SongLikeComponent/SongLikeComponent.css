@@ -1,0 +1,17 @@
+.like_dislike_container{
+    display: flex;
+    gap: 10px;
+}
+
+.dislikes{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.likes{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 6px;
+}

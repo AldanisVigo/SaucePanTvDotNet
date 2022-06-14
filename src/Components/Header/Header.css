@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Roboto:wght@100&display=swap');
+
+.App-header {
+  background-color: #75599D;
+  display: grid;
+  justify-content: left;
+  align-items: center;
+  grid-template-columns: 5fr 1.2fr 1fr;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 0px;
+  padding-right: 20px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 1px 1px 3px black;
+  margin-bottom: 10px;
+  /* background: url('/Users/aldanisvigo/Library/Mobile Documents/com~apple~CloudDocs/Programming/react/trappers/public/img/woodgraintexture.png'); */
+}
+
+.sign_in_menu{
+  cursor: pointer;
+  font-size: medium;
+  text-decoration: none;
+  color: white;
+}
+
+.login_menu{
+  display: none;
+  z-index: 1000;
+}
+
+.sign_in_menu > .login_menu{
+  display: none;
+}
+
+.sign_in_menu:hover > .login_menu{
+  display: block;
+}
+
+.sign_in_button{
+    padding: 0px;
+    margin-left: 5px;
+    max-width: fit-content;
+}
+
+.app_logo {
+  display: inline-block;
+  font-size: 50px;
+  transform: scale(.9);
+  position: relative;
+  border-radius: 20px;
+  left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.site_name{
+  font-family : 'Libre Baskerville';
+  letter-spacing:1vw;
+  font-weight: bold;
+  transform: scaleY(.7);
+  text-align: left;
+}
+
+.app_logo_letters{
+  color: black;
+  z-index: 10000;
+  position: absolute;
+  left: 10px;
+  top: -5px;
+}
+
+
+.app_title{
+  font-family: Monoton !important;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.login_menu{
+  position: absolute;
+  background: purple;
+  top: 50px;
+  right: 10px;
+  padding: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  box-shadow: 1px 1px 10px black;
+
+}
+
+.signup_button{
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  padding: 12px;
+  color: white;
+  text-decoration : none;
+  font-size: medium;
+  background: purple;
+  max-width: fit-content;
+}
+
+.signup_button_title{
+  display: block;
+}
+
+.signup_button_icon{
+  display: none;
+}
+
+.signup_button:hover{
+    background: #8400FF;
+}
+
+.logout_button{
+  margin-left: 6px;
+}
+
+
+
+
+@media only screen and (max-width: 922px){
+  .signup_button_title{
+    display: none;
+  }
+
+  .signup_button_icon{
+    display: block;
+  }
+
+  .signup_button{
+    padding: 8px;
+  }
+}
+
+@media only screen and (min-width: 922px) {
+  .signup_button_title{
+    display: block;
+  }
+
+  .signup_button_icon{
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 600px){
+    .App-header{
+        grid-template-columns: 11fr 2fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    .site_name {
+      transform: scale(0.9);
+    }
+
+    .app_logo {
+      transform: scale(0.8);
+    }
+}

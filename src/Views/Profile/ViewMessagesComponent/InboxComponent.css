@@ -1,0 +1,107 @@
+.inbox{
+    display: grid;
+    grid-template-columns: 20vw auto;
+    grid-template-areas: 'menu list';
+    padding: 0;
+    margin: 0;
+}
+
+.MuiDialogContent-root{
+    padding:0 !important;
+}
+
+.inbox_menu{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 10fr;
+    grid-template-columns: 1fr;
+    grid-area: menu;
+    background: #E3E2E3;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.message_dialog{
+    min-width: 500px;
+}
+
+.inbox_menu_action{
+    cursor: pointer;
+}
+
+.inbox_menu_action_icon{
+    position: relative;
+    top: 4px;
+}
+
+.inbox_menu_action:hover{
+    color: #A513DA
+}   
+
+.incoming_messages_list{
+    padding: 10px;
+    grid-area: list;
+}
+
+.incoming_message{
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 50px 100px auto;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+}
+
+
+
+.sender_link{
+    position: relative;
+    top: 10px;
+    font-weight: bold;
+    color: #B82BB8;
+}
+
+.incoming_message:hover{
+    background: #8115C5;
+    cursor: pointer;
+    color: white;
+}
+
+.incoming_message:hover .sender_link{
+    color: white;
+}
+
+.message_title{
+    position: relative;
+    top: 10px;
+    font-style: italic;
+    text-align: left;
+}
+
+.incoming_message_profile_image{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.mail_close_button{
+    float: right;
+}
+
+.mail_close_button:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.clear_trash_button{
+}
+
+.clear_trash_button:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.open_message{
+
+}

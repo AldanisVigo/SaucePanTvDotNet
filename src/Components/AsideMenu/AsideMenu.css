@@ -1,0 +1,22 @@
+button.selected{
+    background : #000000C8;
+    color: whitesmoke;
+    text-shadow: 0px 0px 8px blue;
+    box-shadow: inset 0px 0px 10px white;
+}
+
+button{
+    border: none !important;
+    position: 'relative';
+    background : #8327F2;
+}
+
+.left_menu{ 
+
+}
+
+.menu_item_icon{
+    position: absolute;
+    left: 10px;
+    /* top: 10px; */
+}

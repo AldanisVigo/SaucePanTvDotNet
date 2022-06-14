@@ -1,0 +1,47 @@
+.leave_a_comment_component{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+.send_comment_button{
+    max-width: 200px;
+    align-self: center;
+    justify-self: center;
+}
+
+.send_comment_box{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+}
+.comment_textarea{
+    resize: none;
+}
+
+.comment_box_and_emoji_picker{
+    display: grid;
+}
+
+.emoji_picker_container{
+    align-text: right;
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+
+.emoji_picker{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.emojis_button{
+    color: orange;
+}
+
+.emojis_button:hover{
+    cursor: pointer;
+}

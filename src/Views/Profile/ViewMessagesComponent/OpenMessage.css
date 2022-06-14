@@ -1,0 +1,81 @@
+.open_message{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: left;
+    /* float: right; */
+    position: relative;
+}
+
+.open_message_top_menu{
+    padding: 10px;
+    background: #A34AE8;
+    color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.open_message_title{
+    font-weight: bold;
+    font-family:Arial;
+    padding: 10px;
+}
+
+.back_button{
+    cursor: pointer;
+    position: relative;
+    top: 6px;
+    color: lightgrey;
+    position: relative;
+    top: -3px;
+}
+
+.sender_profile_link{
+    position: relative;
+    top: -11px;
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+.back_button:hover{
+    color: white;
+}
+
+.open_message_container{
+    padding: 20px;
+}
+
+.open_message_sender_image{
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+.open_message_bottom_menu{
+    background: lightgrey;
+    padding: 4px;
+    text-align: right;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.delete_message_button{
+    cursor: pointer;
+    color: #EBA3A8;
+}
+
+.delete_message_button:hover{
+    color: red;
+}
+
+.clear_trash_button{
+    float: right;
+}
+
+.reply_button{
+    cursor: pointer;
+}
+
+.reply_button:hover{
+    color: red;
+}

@@ -1,0 +1,8 @@
+import './CommentCounter.css'
+
+const CommentCounter = () => {
+    return <div>
+    </div>
+}
+
+export defaut CommentCounter

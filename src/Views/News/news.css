@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.news_container{
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.news_container_main{
+    text-align: left;
+    padding-left: 20px;
+    display: block;
+}
+
+.news_label{
+    font-family: Roboto;
+}
+
+.news{
+    color: black;
+    background: white;
+    padding: 12px;
+    margin-right: 10px;
+    border-radius: 10px;
+    max-width: 490px;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .aside_menu{
+        display: none;
+    }
+
+    .news_container{
+        grid-template-columns: 1fr;
+    }
+}

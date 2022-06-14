@@ -1,0 +1,100 @@
+.host_battle{
+    height: auto;
+    width: 100vw;
+    .battles_dashboard{
+        height: fit-content;
+        width: 100vw;
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 4fr 11fr;
+        grid-template-areas : 'M M'
+                              'L D';
+
+        .battles_menu{ 
+            grid-area : M;
+            background: purple;
+            text-align: left;
+            padding: 20px;
+            .battles_menu_title{
+                font-weight: bold;
+                font-size: large;
+                position: relative;
+                top: 18px;
+                left: 8px;
+            }
+
+            .add_battle_button{
+                float: right;
+                position: relative;
+                top: -10px;
+                right: 21px;
+                &:hover{
+                    cursor: pointer;
+                    color: whitesmoke;
+                }
+            }
+        }
+        .existing_battles_list{
+            grid-area: L;
+            background: grey;
+            padding: 10px;
+
+            .battles_list_item{
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+            .existing_battles_list_item_avatar{
+                width: 45px;
+                height: 45px;
+            }
+        }
+
+        .selected_battle_details{
+            grid-area: D;
+            background: lightgray;
+            padding: 20px;
+            text-align: left;
+            color: black;
+            overflow-x: scroll;
+            .selected_battle_cover_image{
+                border-radius: 20px;
+                border: 5px solid white;
+            }
+
+            .selected_battle_title{
+                font-size: xx-large;
+                font-weight: 800;
+                color: black;
+            }
+        }  
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    .host_battle{
+        width: 100vw;
+        .battles_dashboard{
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 50vh calc(50vh - 100px);
+            grid-template-areas: 'M'
+                                 'D'
+                                 'L';
+        }
+
+        .existing_battles_list{
+            display: block;
+            overflow: scroll;
+        }
+
+        .battles_menu{ 
+            display: block;
+        }
+
+        .selected_battle_details{
+            display: block;
+        }
+    }
+}

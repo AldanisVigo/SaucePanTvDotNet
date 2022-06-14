@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* .news_component_container{
+    display: grid;
+    grid-template-columns: auto;
+} */
+
+.news_container_main{
+    text-align: left;
+    padding-left: 5px;
+}
+
+.news_label{
+    font-family: Roboto;
+}
+
+.news{
+    color: black;
+    background: white;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    max-width: 490px;
+    font-size: small;
+}
+
+@media only screen and (max-width: 600px){
+    .aside_menu{
+        display: none;
+    }
+
+    .news_container{
+        display: 'block'
+    }
+
+    . news_component_container {
+        /* display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; */
+    }
+}   

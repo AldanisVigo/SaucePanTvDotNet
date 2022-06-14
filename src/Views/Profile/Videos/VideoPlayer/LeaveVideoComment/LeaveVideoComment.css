@@ -1,0 +1,8 @@
+.leave_video_comment{
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
+.video_comment_textarea{
+    padding: 10px;
+}

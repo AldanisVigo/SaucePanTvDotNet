@@ -1,0 +1,11 @@
+.username_form{
+    padding: 30px;
+}
+
+.terms_and_conditions_link{
+    color: orange;
+}
+
+.terms_and_conditions_link:hover{
+    cursor : pointer;
+}

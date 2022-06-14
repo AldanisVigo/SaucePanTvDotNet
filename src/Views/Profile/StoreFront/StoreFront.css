@@ -1,0 +1,13 @@
+.store_front{
+    padding : 20px;
+}
+
+.store_front_settings{
+    padding: 20px;
+}
+
+.add_drip{
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto auto auto
+}

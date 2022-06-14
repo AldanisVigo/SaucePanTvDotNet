@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.music_item{
+    display: grid;
+    /* grid-template-rows: 2fr 1fr; */
+    cursor: pointer;
+    font-family: Roboto;
+}
+
+.recently_played_label{
+    font-family: Roboto;
+}
+
+.button_back{
+    border-radius: 0px;
+    background: #9E63A3;
+}
+
+.button_back:hover{
+    background: #87478D; 
+}
+
+.button_next{
+    border-radius: 0px;
+    background: #9E63A3;
+}
+
+.button_next:hover{
+    background: #87478D; 
+}

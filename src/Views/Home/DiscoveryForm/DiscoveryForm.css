@@ -1,0 +1,7 @@
+.discovery_entry{
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: auto;
+    padding: 30px;
+    grid-gap: 8px;
+}

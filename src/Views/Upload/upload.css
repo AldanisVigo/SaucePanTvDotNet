@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.upload_container{
+    display: grid;
+    grid-template-columns: 200px 10fr;
+}
+
+.upload_container_main{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.upload_music_label{
+    font-family: Roboto;
+}
+
+.upload_button{
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .upload_container{ 
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+}

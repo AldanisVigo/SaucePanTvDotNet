@@ -1,0 +1,7 @@
+.content{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 18px;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}

@@ -1,0 +1,44 @@
+.video_comments_component{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 200px;
+    overflow-y: scroll;
+    margin-bottom: 0px;
+}
+
+.video_comment_sender_profile_image{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.video_comment{
+    text-align: left;
+    display: grid;
+    grid-template-columns: 56px 1.2fr 13fr;
+    margin-bottom: 10px;
+}
+
+.video_comment_sender_username{
+    color: orange;
+    font-weight: bold;
+    position: relative;
+    top: 10px;
+}
+
+.video_comment_text{
+    position: relative;
+    top: 10px;
+}
+
+@media only screen and (max-width: 600px){
+    .video_comment{
+        grid-template-columns: 56px 6fr 13fr;
+    }
+}
+
+.comments_are_empty{
+    font-weight: bold;
+    text-align: center;
+}

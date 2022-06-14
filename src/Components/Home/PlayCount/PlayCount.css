@@ -1,0 +1,16 @@
+.playcount {
+    font-size: large;
+    font-weight : 300;
+}
+
+.playcount_user_title{
+    font-size: x-small;
+}
+
+.playcount_number {
+    font-weight: 900;
+}
+
+.playcount_period {
+    font-size: xx-small;
+}

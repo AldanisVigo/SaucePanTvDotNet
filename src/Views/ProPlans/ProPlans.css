@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.pro_plans_container{
+    display: grid;
+    grid-template-columns: 200px auto;
+}
+
+.pro_plans_container_main{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.pro_plans_label{
+    font-family: Roboto;
+}
+
+.back_and_title{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.back_and_title button{
+    height: 36px;
+    position: relative;
+    top: 12px;
+}
+
+.plan_title{
+    font-weight: normal;
+    font-family: Monoton;
+    text-align: center;
+    align-self: center;
+}
+
+.plan_features_list{
+    font-family: Roboto;
+    font-weight: 700;
+}
+
+.plans_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.plan{
+    background: white;
+    color: black;
+    border-radius: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 20px fit-content 20px;
+    box-shadow: 0px 0px 10px black;
+    position: relative;
+}
+
+
+.price_and_buy_button{
+    text-align: center;
+}
+
+.plan_price{
+    align-self: center;
+    margin-right: 8px;
+}
+
+.plan_buy_button{
+    align-self: center;
+    /* position: absolute; */
+    /* bottom:0px; */
+}
+
+.plan_info{
+    min-height: 230px;
+}

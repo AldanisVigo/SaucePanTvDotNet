@@ -1,0 +1,75 @@
+.profile_banner{
+    height: 240px;
+    position: relative;
+    background-size : fit;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color : black;
+}
+
+.darkener{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+
+.profile_image{
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    z-index: 1;
+    border: 3px solid white;
+    display: flex;
+    flex-shrink: 0;
+
+}
+
+.username{
+    font-family: Arial;
+    font-weight: bold;
+    position: relative;
+    left: 30px;
+    /* border: 1px dashed green; */
+    top: 10px;
+    z-index: 1;
+}
+
+.edit_banner_button{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+}
+
+.edit_banner_button:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.profile_image_container{
+    position: relative;
+    width: fit-content;
+}
+
+.edit_profile_picture_button_container{
+    display: block;
+}
+.edit_profile_picture_button {
+    position: absolute;
+    top: 2px;
+    right: -28px;
+    z-index: 1000;
+}
+
+
+.edit_profile_picture_button:hover{
+    cursor: pointer;
+    color: purple;
+}

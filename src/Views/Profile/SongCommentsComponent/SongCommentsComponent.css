@@ -1,0 +1,39 @@
+.song_comments_component{
+    padding: 20px;
+    max-height: 200px;
+    overflow-y:scroll;
+}
+
+.comment{
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-template-areas: "profileimage commentcontent";
+    grid-gap:5px;
+}
+
+.comment_content{
+    grid-area: commentcontent;
+    padding: 10px;
+}
+
+.comment_profile_image{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    top: 9px;
+    grid-area: profileimage;
+}
+
+
+.comment_sender_profile_link{
+    font-weight: bold;
+    color: purple;
+    margin-right: 8px;
+    grid-area: profilelink;
+}
+
+.comment_text{
+    grid-area: commenttext;
+}

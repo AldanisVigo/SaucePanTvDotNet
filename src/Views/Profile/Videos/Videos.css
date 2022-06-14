@@ -1,0 +1,43 @@
+.videos_header{
+    font-weight: bold;
+    font-size: x-large;
+    background: white;
+    color: black;
+    height: 60px;
+}
+
+.videos_content{
+    padding: 10px;
+    background: linear-gradient(to bottom, grey, black);
+    height: 100%;
+    margin-bottom: 20px;
+}
+
+.title{
+    position: relative;
+    top: 10px;
+}
+
+.close_button{
+    position: relative;
+    top: 17px;
+    right: 9px;
+}
+
+.close_button:hover{
+    color: red;
+}
+/* 
+.MuiDialogContent-root{
+    background: black;
+} */
+
+@media only screen and (max-width: 600px){
+    .videos_content{
+        padding: 0px;
+    }
+}
+
+.videos_dialog{
+    background: black;
+}

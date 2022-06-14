@@ -1,0 +1,10 @@
+.new_battle_dialog_content{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    .battle_cover_image_preview{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+    }
+}

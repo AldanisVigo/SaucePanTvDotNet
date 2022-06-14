@@ -1,0 +1,54 @@
+
+
+/* .sign_in_form{
+    margin: 0;
+    box-shadow: 1px 1px 10px black;
+} */
+
+.login_input{
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+    margin-right: 8px;
+}
+
+.login_button{
+    border-radius: 10px;
+    padding: 12px;
+    cursor:pointer;
+    border: none;
+}
+
+.login_button:hover{
+    /* background: #5C4265; */
+    /* color: white; */
+}
+
+.sign_in_menu{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sign_in_form{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+
+.facebook_login_button{
+    background: url('https://firebasestorage.googleapis.com/v0/b/trapppcloud.appspot.com/o/App%20Images%2Ffacebookloginbutton.png?alt=media&token=652b8c6f-d96c-4c56-92e9-750e9bb8a973');
+    background-size: 120% 168%;
+
+    background-position: center;
+    background-color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.facebook_login_button:hover{
+    cursor: pointer;
+}

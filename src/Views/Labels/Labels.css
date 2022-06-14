@@ -1,0 +1,23 @@
+.labels_container{
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    max-height: calc(100vh - 150px);
+    margin-bottom: 200px;
+}
+
+.labels_main{
+    text-align: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding: 20px;
+}
+
+.right_aside{
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 600px){
+    .labels_container{
+        grid-template-columns: 1fr;
+    }
+}
