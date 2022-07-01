@@ -58,21 +58,21 @@ exports.onLostFollower = functions.firestore.document(`users/{uid}/followers/{fo
         })
 
         // //Remove
-        // firestore.doc('/users/' + uid).get().then(userSnap=>{
-        //     firestore.collection("users/" + ownerid + '/followers').get().then(querySnapshot => {
-        //         querySnapshot.forEach(async function(doc) {
-        //             const currentFollowerId = doc.id
-        //             firestore.collection('users').doc(currentFollowerId).collection('feed').get().then(feedSnapshot=>{
-        //                 feedSnapshot.forEach(async function(feeddoc){
-        //                     const feedItemId = feeddoc.id
-        //                     if(feedItemId === snap.after.id){
-        //                         await firestore.doc(feeddoc.ref.path).delete()
-        //                     }
-        //                 })
-        //             })
-        //         })
-        //     })
-        // })
+        firestore.doc('/users/' + uid).get().then(userSnap=>{
+            firestore.collection("users/" + ownerid + '/followers').get().then(querySnapshot => {
+                querySnapshot.forEach(async function(doc) {
+                    const currentFollowerId = doc.id
+                    firestore.collection('users').doc(currentFollowerId).collection('feed').get().then(feedSnapshot=>{
+                        feedSnapshot.forEach(async function(feeddoc){
+                            const feedItemId = feeddoc.id
+                            if(feedItemId === snap.after.id){
+                                await firestore.doc(feeddoc.ref.path).delete()
+                            }
+                        })
+                    })
+                })
+            })
+        })
     }catch{
         console.error(err)
     }

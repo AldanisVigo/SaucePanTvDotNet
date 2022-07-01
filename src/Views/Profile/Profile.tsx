@@ -475,7 +475,7 @@ const Profile = (props:any) => {
                     {user && <div className="profile_menu">
                         {user && user.uid === profileOwnerUid && songs && <span>songs: {songs.length} / 12</span>}
                         {user && user.uid === profileOwnerUid && <div onClick={e=>setShowFollowersList(true)} style={{color : 'black', textAlign: 'right', position: 'relative', top : '0px', left : '0px', cursor: 'pointer'}} ><Person/><span style={{position: 'relative', top: -7}}>{followers.length} followers</span></div>}
-                        <FollowerList followers={followers} setOpen={setShowFollowersList} open={showFollowersList}/>
+                        <FollowerList followers={followers} setOpen={setShowFollowersList} open={showFollowersList} user={user}/>
                         {user && user.uid !== profileOwnerUid && <span className="profile_actions">
                             <button className="profile_action" onClick={e=>setShowStorefront(true)}><Store fontSize="small"/><span className="profile_action_text">Drip</span></button>
                             <button className="profile_action" onClick={e=>setShowVideos(true)}><Videocam fontSize="small"/><span className="profile_action_text">Videos</span></button>
