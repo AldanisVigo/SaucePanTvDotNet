@@ -151,27 +151,28 @@ exports.onSongUploaded = functions.storage.object().onFinalize(async (object)=>{
                 await firestore.collection('users').doc(uid).update({
                     limit : parseInt(userdata.limit) - 1
                 })
+                
+                //Store the song
+                // //Generate downloadURL
+                // var firstPartUrl = object.mediaLink.split("?")[0] // 'https://www.googleapis.com/download/storage/v1/b/abcbucket.appspot.com/o/songs%2Fsong1.mp3.mp3'
+                // var secondPartUrl = object.mediaLink.split("?")[1] // 'generation=123445678912345&alt=media'
 
-                //Generate downloadURL
-                var firstPartUrl = object.mediaLink.split("?")[0] // 'https://www.googleapis.com/download/storage/v1/b/abcbucket.appspot.com/o/songs%2Fsong1.mp3.mp3'
-                var secondPartUrl = object.mediaLink.split("?")[1] // 'generation=123445678912345&alt=media'
+                // firstPartUrl = firstPartUrl.replace("https://www.googleapis.com/download/storage", "https://firebasestorage.googleapis.com")
+                // firstPartUrl = firstPartUrl.replace("v1", "v0")
 
-                firstPartUrl = firstPartUrl.replace("https://www.googleapis.com/download/storage", "https://firebasestorage.googleapis.com")
-                firstPartUrl = firstPartUrl.replace("v1", "v0")
+                // firstPartUrl += "?" + secondPartUrl.split("&")[1]; // 'alt=media'
+                // firstPartUrl += "&token=" + object.metadata.firebaseStorageDownloadTokens
 
-                firstPartUrl += "?" + secondPartUrl.split("&")[1]; // 'alt=media'
-                firstPartUrl += "&token=" + object.metadata.firebaseStorageDownloadTokens
-
-                //Store it
-                await firestore.collection('users').doc(uid).collection('songs').add({
-                    name : filePath.split('/')[filePath.split('/').length - 1],
-                    contentType : contentType,
-                    fileBucket :  fileBucket,
-                    storagePath : filePath,
-                    downloadURL : firstPartUrl,
-                    visibility : 'private',
-                    coverUrl : 'https://firebasestorage.googleapis.com/v0/b/trapppcloud.appspot.com/o/App%20Images%2Fdefault_music_cover.webp?alt=media&token=28ef8400-8017-4ada-8291-d1f32b1b8209'
-                })
+                // //Store it
+                // await firestore.collection('users').doc(uid).collection('songs').add({
+                //     name : filePath.split('/')[filePath.split('/').length - 1],
+                //     contentType : contentType,
+                //     fileBucket :  fileBucket,
+                //     storagePath : filePath,
+                //     downloadURL : firstPartUrl,
+                //     visibility : 'private',
+                //     coverUrl : 'https://firebasestorage.googleapis.com/v0/b/trapppcloud.appspot.com/o/App%20Images%2Fdefault_music_cover.webp?alt=media&token=28ef8400-8017-4ada-8291-d1f32b1b8209'
+                // })
 
             }else{
                 //This is your last upload before pro plan
